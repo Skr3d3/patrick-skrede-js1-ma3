@@ -1,0 +1,29 @@
+html {
+  background-color: grey;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.loader {
+  text-align: center;
+  margin-top: 20px;
+}
+.loader {
+  content: "";
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  border-top-color: #333;
+  animation: spin 1s infinite ease-in-out;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
